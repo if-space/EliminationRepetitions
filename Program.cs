@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Lessons
 {
@@ -21,11 +21,7 @@ namespace Lessons
         {
            foreach(var value in source)
            {
-                if (result.Contains(value))
-                {
-                    return;
-                }
-                else
+                if (!result.Contains(value))
                 {
                     result.Add(value);
                 }
